@@ -1,0 +1,14 @@
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/bin/Debug/net8.0/Mission_2_FinalSolution
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/bin/Debug/net8.0/Mission_2_FinalSolution.deps.json
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/bin/Debug/net8.0/Mission_2_FinalSolution.runtimeconfig.json
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/bin/Debug/net8.0/Mission_2_FinalSolution.dll
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/bin/Debug/net8.0/Mission_2_FinalSolution.pdb
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/Mission_2_FinalSolution.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/Mission_2_FinalSolution.AssemblyInfoInputs.cache
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/Mission_2_FinalSolution.AssemblyInfo.cs
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/Mission_2_FinalSolution.csproj.CoreCompileInputs.cache
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/Mission_2_FinalSolution.dll
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/refint/Mission_2_FinalSolution.dll
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/Mission_2_FinalSolution.pdb
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/Mission_2_FinalSolution.genruntimeconfig.cache
+/Users/leonbuchmiller/RiderProjects/Mission_2_FinalSolution/obj/Debug/net8.0/ref/Mission_2_FinalSolution.dll
