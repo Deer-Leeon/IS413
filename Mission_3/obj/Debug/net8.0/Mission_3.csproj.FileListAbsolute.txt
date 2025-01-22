@@ -1,0 +1,11 @@
+/Users/leonbuchmiller/RiderProjects/Mission_3/bin/Debug/net8.0/Mission_3.deps.json
+/Users/leonbuchmiller/RiderProjects/Mission_3/bin/Debug/net8.0/Mission_3.dll
+/Users/leonbuchmiller/RiderProjects/Mission_3/bin/Debug/net8.0/Mission_3.pdb
+/Users/leonbuchmiller/RiderProjects/Mission_3/obj/Debug/net8.0/Mission_3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonbuchmiller/RiderProjects/Mission_3/obj/Debug/net8.0/Mission_3.AssemblyInfoInputs.cache
+/Users/leonbuchmiller/RiderProjects/Mission_3/obj/Debug/net8.0/Mission_3.AssemblyInfo.cs
+/Users/leonbuchmiller/RiderProjects/Mission_3/obj/Debug/net8.0/Mission_3.csproj.CoreCompileInputs.cache
+/Users/leonbuchmiller/RiderProjects/Mission_3/obj/Debug/net8.0/Mission_3.dll
+/Users/leonbuchmiller/RiderProjects/Mission_3/obj/Debug/net8.0/refint/Mission_3.dll
+/Users/leonbuchmiller/RiderProjects/Mission_3/obj/Debug/net8.0/Mission_3.pdb
+/Users/leonbuchmiller/RiderProjects/Mission_3/obj/Debug/net8.0/ref/Mission_3.dll
