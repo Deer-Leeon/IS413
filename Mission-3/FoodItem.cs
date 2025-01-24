@@ -2,48 +2,52 @@ namespace Mission_3;
 
 public class FoodItems
 {
+    // Helper method to get user input with a prompt and ensure it's not empty
     private string GetInput(string prompt)
     {
         string input = "";
         while (string.IsNullOrWhiteSpace(input)) // Ensure non-empty input
         {
             Console.WriteLine(prompt);
-            input = Console.ReadLine();
+            input = Console.ReadLine(); // Read input from the user
         }
-        return input;
+
+        return input; // Return the validated input
     }
 
+    // List to store food items as inventory
     private List<FoodItem> Inventory = new List<FoodItem>();
 
-    // Define the FoodItem class
+    // Class to represent a FoodItem
     public class FoodItem
     {
-        public int Index { get; set; }
-        public string Name { get; set; }
-        public string Category { get; set; }
-        public int Quantity { get; set; }
-        public string ExpirationDate { get; set; }
+        public int Index { get; set; } // Unique identifier for the food item
+        public string Name { get; set; } // Name of the food item
+        public string Category { get; set; } // Category the food item belongs to
+        public int Quantity { get; set; } // Quantity available in inventory
+        public string ExpirationDate { get; set; } // Expiration date of the food item
     }
 
+    // Method to add a new food item to the inventory
     public void AddFoodItem()
     {
-        // Create a new FoodItem object
+        // Create a new FoodItem object and populate its properties
         FoodItem foodItem = new FoodItem
         {
-            Index = Inventory.Count + 1,
-            Name = GetInput("Name: "),
-            Category = GetInput("Category: ")
+            Index = Inventory.Count + 1, // Set Index as the next available number
+            Name = GetInput("Name: "), // Get the name of the food item
+            Category = GetInput("Category: ") // Get the category
         };
 
-        // Validate Quantity input
+        // Validate Quantity input and ensure it's a non-negative integer
         int quantity;
         while (true)
         {
             string quantityInput = GetInput("Quantity (must be a positive number): ");
             if (int.TryParse(quantityInput, out quantity) && quantity >= 0)
             {
-                foodItem.Quantity = quantity;
-                break; // Exit loop if input is valid and non-negative
+                foodItem.Quantity = quantity; // Assign valid quantity to the food item
+                break; // Exit loop when input is valid
             }
             else
             {
@@ -51,23 +55,26 @@ public class FoodItems
             }
         }
 
-        // Get Expiration Date
+        // Get expiration date from the user
         foodItem.ExpirationDate = GetInput("Expiration Date (mm/dd/yyyy): ");
 
-        // Add the FoodItem to the inventory
+        // Add the new food item to the inventory
         Inventory.Add(foodItem);
 
-        Console.WriteLine("Food item added successfully!");
+        Console.WriteLine("Food item added successfully!"); // Confirmation message
     }
 
+    // Method to display the list of food items
     public void FoodItemList()
     {
+        // Check if inventory is empty
         if (Inventory.Count == 0)
         {
-            Console.WriteLine("No inventory available.");
+            Console.WriteLine("No inventory available."); // Notify the user
             return;
         }
 
+        // Print each food item in the inventory
         Console.WriteLine("\nCurrent Food Items:");
         foreach (var item in Inventory)
         {
@@ -76,32 +83,33 @@ public class FoodItems
         }
     }
 
+    // Method to delete a food item by its Index
     public void DeleteFoodItem()
     {
-        // Check if the inventory is empty
+        // Check if inventory is empty
         if (Inventory.Count == 0)
         {
             Console.WriteLine("No items to delete. The inventory is empty.");
             return;
         }
 
-        // Display current food items
+        // Display the current food items
         Console.WriteLine("\nCurrent Food Items:");
         FoodItemList();
 
-        // Get the Index to delete from the user
+        // Get the Index of the item to delete
         int indexToDelete;
         while (!int.TryParse(GetInput("Enter the Index of the food item to delete: "), out indexToDelete))
         {
             Console.WriteLine("Invalid input. Please enter a valid number.");
         }
 
-        // Find the item with the specified Index
+        // Find the food item in the inventory with the given Index
         var itemToDelete = Inventory.FirstOrDefault(item => item.Index == indexToDelete);
 
         if (itemToDelete != null)
         {
-            // Remove the item from the inventory
+            // Remove the food item from the inventory
             Inventory.Remove(itemToDelete);
             Console.WriteLine($"Item with Index {indexToDelete} deleted successfully!");
 
@@ -110,13 +118,14 @@ public class FoodItems
         }
         else
         {
-            Console.WriteLine($"No item found with Index {indexToDelete}.");
+            Console.WriteLine($"No item found with Index {indexToDelete}."); // Notify if not found
         }
     }
 
-    // Method to update Indexes after deletion
+    // Method to update Indexes after a deletion
     private void UpdateIndexes()
     {
+        // Reassign Index values sequentially to maintain consistency
         for (int i = 0; i < Inventory.Count; i++)
         {
             Inventory[i].Index = i + 1;
