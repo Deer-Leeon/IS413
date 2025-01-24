@@ -1,0 +1,15 @@
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/Mission-3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/Mission-3.AssemblyInfoInputs.cache
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/Mission-3.AssemblyInfo.cs
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/Mission-3.csproj.CoreCompileInputs.cache
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/Mission-3.sourcelink.json
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/bin/Debug/net8.0/Mission-3
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/bin/Debug/net8.0/Mission-3.deps.json
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/bin/Debug/net8.0/Mission-3.runtimeconfig.json
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/bin/Debug/net8.0/Mission-3.dll
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/bin/Debug/net8.0/Mission-3.pdb
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/Mission-3.dll
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/refint/Mission-3.dll
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/Mission-3.pdb
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/Mission-3.genruntimeconfig.cache
+/Users/leonbuchmiller/RiderProjects/IS413/Mission-3/obj/Debug/net8.0/ref/Mission-3.dll
