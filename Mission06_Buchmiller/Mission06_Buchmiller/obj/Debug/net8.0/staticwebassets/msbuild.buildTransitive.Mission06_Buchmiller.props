@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Mission06_Buchmiller.props" />
+</Project>
