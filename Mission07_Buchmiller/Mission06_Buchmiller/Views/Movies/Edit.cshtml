@@ -1,12 +1,14 @@
-﻿@model Mission06_Buchmiller.Models.Movie
+@model Mission06_Buchmiller.Models.Movie
 
 @{
-    ViewData["Title"] = "Add Movie";
+    ViewData["Title"] = "Edit Movie";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<form asp-action="Create" method="post">
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="MovieId" />
+
     <div class="form-group">
         <label asp-for="Title" class="control-label"></label>
         <input asp-for="Title" class="form-control" required />
@@ -48,9 +50,9 @@
         <span asp-validation-for="Rating" class="text-danger"></span>
     </div>
 
-    <div class="form-check">
+    <div class="form-group">
+        <label asp-for="Edited" class="control-label"></label>
         <input type="checkbox" asp-for="Edited" class="form-check-input" />
-        <label asp-for="Edited" class="form-check-label"></label>
     </div>
 
     <div class="form-group">
@@ -75,7 +77,8 @@
     </div>
 
     <div class="form-group">
-        <input type="submit" value="Add Movie" class="btn btn-primary" />
+        <input type="submit" value="Save Changes" class="btn btn-success" />
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
     </div>
 </form>
 
