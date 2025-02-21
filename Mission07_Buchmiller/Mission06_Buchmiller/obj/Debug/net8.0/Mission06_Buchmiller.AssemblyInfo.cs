@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Mission06_Buchmiller")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b30948f755414f9c49d6198e9c75d8f74239ef7e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ccd93b556db4ad13f41049125aeb4a3201f11b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mission06_Buchmiller")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mission06_Buchmiller")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
