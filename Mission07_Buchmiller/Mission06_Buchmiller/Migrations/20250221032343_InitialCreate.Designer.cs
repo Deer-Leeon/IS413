@@ -11,7 +11,7 @@ using Mission06_Buchmiller.Models;
 namespace Mission06_Buchmiller.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250221032104_InitialCreate")]
+    [Migration("20250221032343_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -34,7 +34,6 @@ namespace Mission06_Buchmiller.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Director")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("Edited")

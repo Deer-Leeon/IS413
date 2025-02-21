@@ -13,8 +13,6 @@ namespace Mission06_Buchmiller.Models
 
         [Required]
         public int Year { get; set; }
-        
-        [Required]
         public string? Director { get; set; }
 
         [Required]
@@ -25,7 +23,7 @@ namespace Mission06_Buchmiller.Models
         public string? LentTo { get; set; } // Nullable is fine
         
         [Required]
-        public bool? CopiedToPlex { get; set; }
+        public bool CopiedToPlex { get; set; }
 
         [MaxLength(25)]
         public string? Notes { get; set; } // Nullable is fine

@@ -31,7 +31,6 @@ namespace Mission06_Buchmiller.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Director")
-                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("Edited")
