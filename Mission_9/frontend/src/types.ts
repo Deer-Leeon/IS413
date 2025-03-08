@@ -1,4 +1,4 @@
-interface Team {
+export interface Team {
     tid: number;
     cid: number;
     did: number;
@@ -10,4 +10,8 @@ interface Team {
     state: string;
     latitude: number;
     longitude: number;
+  }
+  
+  export interface TeamsData {
+    teams: Team[];
   }
