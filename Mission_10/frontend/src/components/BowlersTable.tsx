@@ -51,29 +51,35 @@ const BowlersTable = () => {
 
     // Render the table with bowler data
     return (
-        <div>
-            <table>
+        <div style={{ margin: '20px', textAlign: 'center' }}>
+            <table style={{ 
+                width: '80%', 
+                margin: '0 auto', 
+                borderCollapse: 'collapse', 
+                boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+                border: '1px solid #ddd'
+            }}>
                 <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Team</th>
-                        <th>Address</th>
-                        <th>City</th>
-                        <th>State</th>
-                        <th>Zip</th>
-                        <th>Phone</th>
+                    <tr style={{ backgroundColor: '#082E5C', color: 'white' }}>
+                        <th style={{ padding: '12px', textAlign: 'left' }}>Name</th>
+                        <th style={{ padding: '12px', textAlign: 'left' }}>Team</th>
+                        <th style={{ padding: '12px', textAlign: 'left' }}>Address</th>
+                        <th style={{ padding: '12px', textAlign: 'left' }}>City</th>
+                        <th style={{ padding: '12px', textAlign: 'left' }}>State</th>
+                        <th style={{ padding: '12px', textAlign: 'left' }}>Zip</th>
+                        <th style={{ padding: '12px', textAlign: 'left' }}>Phone</th>
                     </tr>
                 </thead>
                 <tbody>
                     {bowlers.map((bowler) => (
-                        <tr key={bowler.bowlerID}>
-                            <td>{bowler.name}</td>
-                            <td>{bowler.teamName}</td>
-                            <td>{bowler.address}</td>
-                            <td>{bowler.city}</td>
-                            <td>{bowler.state}</td>
-                            <td>{bowler.zip}</td>
-                            <td>{bowler.phone}</td>
+                        <tr key={bowler.bowlerID} style={{ borderBottom: '1px solid #ddd' }}>
+                            <td style={{ padding: '12px', textAlign: 'left' }}>{bowler.name}</td>
+                            <td style={{ padding: '12px', textAlign: 'left' }}>{bowler.teamName}</td>
+                            <td style={{ padding: '12px', textAlign: 'left' }}>{bowler.address}</td>
+                            <td style={{ padding: '12px', textAlign: 'left' }}>{bowler.city}</td>
+                            <td style={{ padding: '12px', textAlign: 'left' }}>{bowler.state}</td>
+                            <td style={{ padding: '12px', textAlign: 'left' }}>{bowler.zip}</td>
+                            <td style={{ padding: '12px', textAlign: 'left' }}>{bowler.phone}</td>
                         </tr>
                     ))}
                 </tbody>
