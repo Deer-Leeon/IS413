@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/backend_10.props" />
+</Project>
