@@ -1,5 +1,11 @@
 import { useState, useEffect } from "react";
-import { Table, Pagination, FormSelect, Container } from "react-bootstrap";
+import {
+  Table,
+  Pagination,
+  FormSelect,
+  Container,
+  Form,
+} from "react-bootstrap";
 import axios from "axios";
 
 interface Book {
@@ -20,12 +26,18 @@ export default function BookList() {
   const [pageSize, setPageSize] = useState(5);
   const [totalCount, setTotalCount] = useState(0);
   const [sortBy, setSortBy] = useState("title");
+  const [searchTitle, setSearchTitle] = useState("");
+
+  // Reset page to 1 when search term changes
+  useEffect(() => {
+    setPage(1);
+  }, [searchTitle]);
 
   useEffect(() => {
     const fetchBooks = async () => {
       try {
         const response = await axios.get(`/api/books`, {
-          params: { page, pageSize, sortBy },
+          params: { page, pageSize, sortBy, searchTitle },
         });
         setBooks(response.data.results);
         setTotalCount(response.data.totalCount);
@@ -35,7 +47,7 @@ export default function BookList() {
     };
 
     fetchBooks();
-  }, [page, pageSize, sortBy]);
+  }, [page, pageSize, sortBy, searchTitle]);
 
   return (
     <Container className="mt-4">
@@ -44,7 +56,7 @@ export default function BookList() {
           style={{ width: "150px" }}
           value={pageSize}
           onChange={(e) => {
-            setPage(1); // Reset to first page when changing page size
+            setPage(1);
             setPageSize(Number(e.target.value));
           }}
         >
@@ -65,6 +77,15 @@ export default function BookList() {
           <option value="category">Sort by Category</option>
         </FormSelect>
       </div>
+
+      <Form.Group className="mb-3">
+        <Form.Control
+          type="text"
+          placeholder="Search by title..."
+          value={searchTitle}
+          onChange={(e) => setSearchTitle(e.target.value)}
+        />
+      </Form.Group>
 
       <Table striped bordered hover responsive>
         <thead>
