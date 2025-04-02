@@ -116,9 +116,12 @@ export default function BookList() {
             <option value="">All Categories</option>
             <option value="Biography">Biography</option>
             <option value="Self-Help">Self-Help</option>
-            <option value="Fiction">Fiction</option>
-            <option value="Non-Fiction">Non-Fiction</option>
-            <option value="Technology">Technology</option>
+            <option value="Classic">Classic</option>
+            <option value="Health">Health</option>
+            <option value="Thrillers">Thrillers</option>
+            <option value="Historical">Historical</option>
+            <option value="Action">Action</option>
+            <option value="Christian Books">Christian Books</option>
           </FormSelect>
         </Col>
 
